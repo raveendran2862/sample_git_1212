@@ -1,14 +1,9 @@
 # model.py
-from sklearn.linear_model import LinearRegression
-import numpy as np
+def add(a, b):
+    return a + b
 
-def train_model():
-    X = np.array([[1],[2],[3],[4]])
-    y = np.array([2,4,6,8])  # y = 2x
+def multiply(a, b):
+    return a * b
 
-    model = LinearRegression()
-    model.fit(X, y)
-    return model
-
-model = train_model()
-print("Model coefficient:", model.coef_)
+print("Add:", add(5, 10))
+print("Multiply:", multiply(3, 4))
